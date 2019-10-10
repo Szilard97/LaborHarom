@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LaborHarom</string>
+    <string name="loginText">LOGIN</string>
+    <string name="nameIputLogin">Name</string>
+    <string name="pick_date">Pick date</string>
+    <string name="remember_meLogin">Remember me</string>
+    <string name="emailTextLogin">Email</string>
+    <string name="PasswordTextLogin">Password</string>
 </resources>
