@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
     private CheckBox checkBox;
     public static final String  SHARED_PREF = "sharedPrefs";
     public static final String switch1 = "switch1";
-
+    private Button hobbyButton;
     private String name, email, password, burthDate1;
 
 
@@ -59,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         burthDate = findViewById(R.id.textViewDate);
         passwordPlanetext = findViewById(R.id.editTextPasswordLogin);
         checkBox = findViewById(R.id.checkBoxRememberMe);
+        hobbyButton = findViewById(R.id.Hobby);
 
     }
 
@@ -123,6 +124,13 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         loadData();
+
+        hobbyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, AddNewHobby.class));
+            }
+        });
 
     }
 
